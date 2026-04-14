@@ -15,6 +15,8 @@ export GRADLE_USER_HOME=/opt/goinfre/$(whoami)/.gradle
 
 export DOTNET_ROOT=/opt/goinfre/$(whoami)/dotnet
 
-export ANDROID_HOME=/Users/$(whoami)/goinfre/homebrew/share/android-commandlinetools
+export ANDROID_AVD_HOME=/opt/goinfre/$(whoami)/android_avd
+
+export ANDROID_HOME=/opt/goinfre/$(whoami)/homebrew/share/android-commandlinetools
 export ANDROID_SDK_ROOT=$ANDROID_HOME
 export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH
