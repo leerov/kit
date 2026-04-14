@@ -11,8 +11,10 @@ export ANDROID_NDK_HOME="/opt/goinfre/$(whoami)/homebrew/share/android-ndk"
 export OLLAMA_MODELS=/goinfre/$(whoami)/ollama/models
 
 # Android в goinfre
-export ANDROID_HOME=/opt/goinfre/$(whoami)/Android/sdk
 export GRADLE_USER_HOME=/opt/goinfre/$(whoami)/.gradle
-export ANDROID_SDK_ROOT=/opt/goinfre/$(whoami)/Android/sdk
 
 export DOTNET_ROOT=/opt/goinfre/$(whoami)/dotnet
+
+export ANDROID_HOME=/Users/$(whoami)/goinfre/homebrew/share/android-commandlinetools
+export ANDROID_SDK_ROOT=$ANDROID_HOME
+export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH
