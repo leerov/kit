@@ -22,7 +22,7 @@ export ANDROID_SDK_ROOT=$ANDROID_HOME
 export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH
 
 # Кастомный OpenSSL в goinfre
-export OPENSSL_ROOT="/goinfre/$(whoami)/openssl-local"
+export OPENSSL_ROOT="/opt/goinfre/$(whoami)/openssl-local"
 export PATH="$OPENSSL_ROOT/bin:$PATH"
 export LDFLAGS="-L$OPENSSL_ROOT/lib"
 export CPPFLAGS="-I$OPENSSL_ROOT/include"
