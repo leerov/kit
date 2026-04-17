@@ -20,3 +20,11 @@ export ANDROID_AVD_HOME=/opt/goinfre/$(whoami)/android_avd
 export ANDROID_HOME=/opt/goinfre/$(whoami)/homebrew/share/android-commandlinetools
 export ANDROID_SDK_ROOT=$ANDROID_HOME
 export PATH=$ANDROID_HOME/cmdline-tools/latest/bin:$ANDROID_HOME/emulator:$ANDROID_HOME/platform-tools:$PATH
+
+# Кастомный OpenSSL в goinfre
+export OPENSSL_ROOT="/goinfre/$(whoami)/openssl-local"
+export PATH="$OPENSSL_ROOT/bin:$PATH"
+export LDFLAGS="-L$OPENSSL_ROOT/lib"
+export CPPFLAGS="-I$OPENSSL_ROOT/include"
+export PKG_CONFIG_PATH="$OPENSSL_ROOT/lib/pkgconfig"
+export DYLD_LIBRARY_PATH="$OPENSSL_ROOT/lib:$DYLD_LIBRARY_PATH"
