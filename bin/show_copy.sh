@@ -79,10 +79,10 @@ showcopy() {
     for ext in "${text_exts[@]}"; do
         while IFS= read -r file; do
             files+=("$file")
-        done < <(find "$dir" -type f -name "$ext" 2>/dev/null | grep -v -E "(\.git|node_modules|__pycache__|\.venv|venv|build|dist|.idea|.vscode)")
+        done < <(find "$dir" -type f -name "$ext" 2>/dev/null | grep -v -E "(\.git/|node_modules/|__pycache__/|\.venv/|venv/|build/|dist/|\.idea/|\.vscode/)")
     done
     
-    printf "%s\n" "${files[@]}" | sort -u > "$temp_file.list"
+    printf "%s\n" "${files[@]}" | grep -v -E "(^|/)\.git/" | sort -u > "$temp_file.list"
     
     local file_count=$(wc -l < "$temp_file.list" | tr -d ' ')
     

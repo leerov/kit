@@ -54,6 +54,12 @@ EOF
 # After I tell you what to change, generate ONLY the ap patch file.
 # Nothing else. Just the patch.
 #
+# write patch like a code block
+# 
+# ```ap
+# 
+# ```
+#
 # === AP FORMAT SPECIFICATION ===
 #
 EOF
@@ -70,6 +76,12 @@ EOF
 # I have analyzed the project structure and code.
 # I am ready to generate AP patches.
 # Just tell me what to change.
+#
+# write patch like a code block
+# 
+# ```ap
+# 
+# ```
 #
 # === PROJECT STRUCTURE (again) ===
 #
